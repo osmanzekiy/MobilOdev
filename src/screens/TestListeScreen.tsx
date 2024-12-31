@@ -12,7 +12,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigation/AppNavigator";
 import { KanTestiModal } from "../modals/KanTestiModal";
 import { format } from "date-fns";
-import { tr } from 'date-fns/locale';
+import { tr } from 'date-fns/locale';//
 import { auth, firestore } from "../services/firebaseConfig";
 import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
 

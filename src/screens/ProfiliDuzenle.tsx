@@ -18,7 +18,7 @@ import { doc, getDoc, updateDoc } from 'firebase/firestore';
 
 type EditProfileScreenProps = NativeStackScreenProps<RootStackParamList, 'ProfilDuzenle'>;
 
-async function updateUserProfileInFirestore(userId: string, profileData: { 
+async function updateUserProfileInFirestore(userId: string, profileData: { //
   name?: string, 
   surname?: string, 
   weight?: number, 
