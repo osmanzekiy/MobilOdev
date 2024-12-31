@@ -19,7 +19,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { auth, firestore } from '../services/firebaseConfig';
 import { createUserWithEmailAndPassword, updateProfile } from '@firebase/auth';
 
-type RegisterScreenProps = NativeStackScreenProps<RootStackParamList, 'KayitOl'>;//
+type RegisterScreenProps = NativeStackScreenProps<RootStackParamList, 'KayitOl'>;
 
 export function KayitScreen({ navigation }: RegisterScreenProps) {
   const [email, setEmail] = useState('');
