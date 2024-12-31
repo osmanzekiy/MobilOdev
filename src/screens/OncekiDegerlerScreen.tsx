@@ -75,25 +75,25 @@ async function getTestHistory(testType: string, paramName: string, userId: strin
   }
 }
 
-const ResultIndicator = ({ currentValue, previousValues }: { currentValue: number; previousValues: number[] }) => {
-  if (previousValues.length < 1) return null;
+// const ResultIndicator = ({ currentValue, previousValues }: { currentValue: number; previousValues: number[] }) => {
+  // if (previousValues.length < 1) return null;
 
-  let indicator = '➡️'; // Varsayılan nötr ok simgesi
+  // let indicator = '➡️'; // Varsayılan nötr ok simgesi
 
-  // Mevcut değeri son test değeriyle karşılaştır
-  const lastValue = previousValues[0];
+  // // Mevcut değeri son test değeriyle karşılaştır
+  // const lastValue = previousValues[0];
 
-  const isIncreasing = currentValue < lastValue;
-  const isDecreasing = currentValue > lastValue;
+  // const isIncreasing = currentValue < lastValue;
+  // const isDecreasing = currentValue > lastValue;
 
-  if (isIncreasing) {
-    indicator = '⬆️'; // Yükselme ok simgesi
-  } else if (isDecreasing) {
-    indicator = '⬇️'; // Düşüş ok simgesi
-  }
+  // if (isIncreasing) {
+    // indicator = '⬆️'; // Yükselme ok simgesi
+  // } else if (isDecreasing) {
+    // indicator = '⬇️'; // Düşüş ok simgesi
+  // }
 
-  return <Text style={styles.indicator}>{indicator}</Text>;
-};
+  // return <Text style={styles.indicator}>{indicator}</Text>;
+// };
 
 export function OncekiDegerlerScreen({ route, navigation }: Props) {
   const { testId, userId } = route.params;  // TestID ve UserID parametre olarak alınıyor
