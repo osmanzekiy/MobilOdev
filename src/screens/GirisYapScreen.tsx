@@ -17,7 +17,7 @@ type RootStackParamList = {
   Register: undefined;
   Home: undefined;
 };
-
+//
 type LoginScreenProps = NativeStackScreenProps<RootStackParamList, 'GirisYap'>;
 
 export function GirisYapScreen({ navigation }: LoginScreenProps) {
